@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charmie don't click this link 🕷️🕸️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffffff, #ffc0cb);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 50px 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff4d6d;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-top: 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .characters {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .characters img {
+      width: 120px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .characters img:nth-child(2) { animation-delay: 0.5s; }
+    .characters img:nth-child(3) { animation-delay: 1s; }
+
+    .heart {
+      font-size: 2rem;
+      animation: pulse 1.5s infinite;
+    }
+
+    .rose {
+      position: absolute;
+      width: 40px;
+      animation: floatRose 10s linear infinite;
+      opacity: 0.7;
+    }
+
+    .rose:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .rose:nth-child(2) { left: 50%; animation-delay: 3s; }
+    .rose:nth-child(3) { left: 80%; animation-delay: 6s; }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes floatRose {
+      0% { top: 100%; transform: rotate(0deg); }
+      100% { top: -10%; transform: rotate(360deg); }
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .music-note {
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🌹 Roses -->
+  <img class="rose" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Red_rose.png/240px-Red_rose.png">
+  <img class="rose" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Red_rose.png/240px-Red_rose.png">
+  <img class="rose" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Red_rose.png/240px-Red_rose.png">
+
+  <div class="container">
+    <h1>Happy Anniversary Charmie ❤️</h1>
+
+    <!-- 💖 FINAL MESSAGE -->
+    <p>
+      You’re my peace, my happiness, and my favorite part of every day ❤️<br><br>
+      Just like Timmy had Cosmo and Wanda…<br>
+      I got my own little bit of magic in you ✨💖
+    </p>
+
+    <div class="heart">❤️</div>
+
+    <div class="music-note">🎶 Tap the video below to play our song</div>
+
+    <!-- 🎶 SONG -->
+    <iframe width="300" height="170"
+      src="https://www.youtube.com/embed/450p7goxZqg?loop=1&playlist=450p7goxZqg"
+      title="Can't Help Falling in Love - Kina Grannis"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+    <!-- 🎬 CHARACTERS -->
+    <div class="characters">
+      <img src="Timmy_Turner.jpeg">
+      <img src="Cosmo.jpeg">
+      <img src="Wanda.jpeg">
+    </div>
+
+    <footer>
+      Made with love by Jeff 💌
+    </footer>
+  </div>
+
+</body>
+</html>
+        
